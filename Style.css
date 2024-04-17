@@ -102,40 +102,17 @@ body{
     padding: 16px;
 }
 
-.cartContainer{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 30px;
-}
-
-.cart{
-    width: 155px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #252525;
-}
-
-.cart > *{
-    padding-top: 7px;
-}
-
-.cart img{
-    width: 100%;
-    object-fit: contain;
-}
-
-.cartContainer{
+.cartContainer {
     margin: 30px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     overflow-y: auto;
-    max-height: 70vh;
+    max-height: 60vh; 
 }
 
-.cart{
-    width: 150px;
+.cart {
+    width: 170px;
     padding: 10px;
     border-radius: 5px;
     background-color: #252525;
@@ -144,17 +121,19 @@ body{
 }
 
 .cart:hover{
-    background-color: rgb(98, 98, 98);
+    background-color: rgb(105, 103, 103);
     cursor: pointer;
     --a: 1;
 }
 
-.image-container {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cart>* {
+    padding-top: 10px;
+}
+
+.cart img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
 }
 
 .play{
@@ -280,7 +259,7 @@ body{
 }
 
 .seekbar{
-    height: 2px;
+    height: 4px;
     width: 98%;
     background: black;
     position: absolute;
@@ -296,7 +275,7 @@ body{
     border-radius: 13px;
     background-color: black;
     position: relative;
-    bottom: 5px;
+    bottom: 4px;
     left: 0%;
     transition: left 0.5;
 }
